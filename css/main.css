@@ -1,0 +1,242 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+/*Do I remove the margin here? Not in screenshot.*/
+.container {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	text-align: center;
+	width: 100%;
+}
+
+.top-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+	line-height: 2em;
+	border-bottom: 0.188em solid #77a466;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.3125em;
+    padding: 0 1.875em;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+}
+
+header h1 {
+	padding: 0 2.375em;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	width: 100%;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	list-style-type: none;
+	line-height: 3em;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-top: 0.188em solid #77a466;
+	border-bottom: 0.188em solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 0.313em 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.563em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+}
+
+.section-one h3 {
+	padding: 0.625em 1.875em;
+}
+
+.section-two {
+	border-top: 0.063em solid #eee;
+	border-bottom: 0.063em solid #eee;
+}
+
+.section-two h3,
+.section-three h3 {
+	padding: 0.625em 1.875em;
+}
+
+.menu {
+	list-style: none;
+	
+}
+.menu li {
+	padding: 0.625em 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3125em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow:row-wrap;
+	border-top: 0.188em solid #eee;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+@media screen (min-width: 768px) {
+	.section-one,
+	.section-two,
+	.section-three {
+		min-width: 0;
+		width: 33%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	}
+
+	.nav {
+	display: flex;
+	justify-content: text-end;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+	}
+
+	.bottom-section {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	flex: 1;
+	overflow: hidden;
+	min-height: 250px;
+	border-top: 0.188em solid #77a466;
+	border-bottom: 0.188em solid #77a466;
+	}
+
+	.section-two {
+	border-left: 0.063em solid #eee;
+	border-right: 0.063em solid #eee;
+	border-top: none;
+	border-bottom: none;
+	padding: 0.625em 1.875em;
+	}
+}
