@@ -75,7 +75,6 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 1.3125em;
-    padding: 0 1.875em;
 }
 
 /*The widths are in a percentage!*/
@@ -89,6 +88,10 @@ header h1 span {
 
 header nav {
 	width: 90%;
+}
+
+header nav ul {
+	padding: 0;
 }
 
 header nav ul li {
@@ -111,10 +114,12 @@ header nav ul li a {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
+	padding: 0;
 }
 
 .main-image {
 	height: auto;
+	padding: 0;
 }
 .main-image img {
 	width: 100%;
@@ -126,24 +131,20 @@ header nav ul li a {
 	height: auto;
 }
 .main-title h2 {
-	text-align: left;
-	padding: 0.313em 0;
 	color: #77a466;
+	text-align: left;
 }
 .main-title p {
-	padding: 0;
 	font-size: 1em;
 	line-height: 1.563em;
+	padding: 0;
 }
 
 .section-one,
 .section-two,
 .section-three {
 	width: 100%;
-}
-
-.section-one h3 {
-	padding: 0.625em 1.875em;
+	padding: 0;
 }
 
 .section-two {
@@ -151,13 +152,9 @@ header nav ul li a {
 	border-bottom: 0.063em solid #eee;
 }
 
-.section-two h3,
-.section-three h3 {
-	padding: 0.625em 1.875em;
-}
-
 .menu {
 	list-style: none;
+	padding: 0;
 	
 }
 .menu li {
@@ -213,6 +210,10 @@ footer span {
 	border-bottom: none;
 	padding: 0.625em 1.875em;
 	}
+
+	.section-three {
+	padding: 0.625em 1.875em;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -258,6 +259,10 @@ footer span {
 	border-right: 0.063em solid #eee;
 	border-top: none;
 	border-bottom: none;
+	padding: 0.625em 1.875em;
+	}
+
+	.section-three {
 	padding: 0.625em 1.875em;
 	}
 }
